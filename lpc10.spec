@@ -2,7 +2,7 @@ Summary:	LPC-10 2400 bps Voice Coder
 Summary(pl):	Koder g³osu LPC-10 2400 bps
 Name:		lpc10
 Version:	1.5
-Release:	1
+Release:	2
 License:	unknown
 Group:		Applications/Sound
 Source0:	http://www.arl.wustl.edu/~jaf/lpc/%{name}-%{version}.tar.gz
