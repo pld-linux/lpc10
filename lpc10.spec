@@ -22,7 +22,7 @@ Koder g這su LPC-10 2400 bps - biblioteka i narz璠zia.
 Summary:	LPC-10 2400 bps Voice Coder headers files
 Summary(pl):	Pliki nag堯wkowe kodera g這su LPC-10 2400 bps
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 LPC-10 2400 bps Voice Coder headers.
@@ -34,7 +34,7 @@ Pliki nag堯wkowe kodera g這su LPC-10 2400 bps.
 Summary:	LPC-10 2400 bps Voice Coder static library
 Summary(pl):	Statyczna biblioteka kodera g這su LPC-10 2400 bps
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 LPC-10 2400 bps Voice Coder static library.
@@ -44,17 +44,20 @@ Statyczna biblioteka kodera g這su LPC-10 2400 bps.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
 %{__make} -C lpc55-C \
-	CC="%{__cc}" OPT="%{rpmcflags}"
+	CC="%{__cc}" \
+	OPT="%{rpmcflags}" \
+	LIBDIR=%{_libdir}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} -C lpc55-C install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	LIBDIR=%{_libdir}
 
 mv -f lpc55-C/README README.tools
 mv -f lpc55-C/lpc10/README README.lpc10
