@@ -6,6 +6,7 @@ Release:	1
 License:	unknown
 Group:		Applications/Sound
 Source0:	http://www.arl.wustl.edu/~jaf/lpc/%{name}-%{version}.tar.gz
+# Source0-md5:	c6d9174b78c4aafa67ae50b232a3aef3
 Patch0:		%{name}-shared.patch
 URL:		http://www.arl.wustl.edu/~jaf/lpc/
 BuildRequires:	libtool
