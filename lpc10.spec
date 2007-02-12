@@ -1,5 +1,5 @@
 Summary:	LPC-10 2400 bps Voice Coder
-Summary(pl):	Koder g≥osu LPC-10 2400 bps
+Summary(pl.UTF-8):   Koder g≈Çosu LPC-10 2400 bps
 Name:		lpc10
 Version:	1.5
 Release:	2
@@ -15,32 +15,32 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 LPC-10 2400 bps Voice Coder library and tools.
 
-%description -l pl
-Koder g≥osu LPC-10 2400 bps - biblioteka i narzÍdzia.
+%description -l pl.UTF-8
+Koder g≈Çosu LPC-10 2400 bps - biblioteka i narzƒôdzia.
 
 %package devel
 Summary:	LPC-10 2400 bps Voice Coder headers files
-Summary(pl):	Pliki nag≥Ûwkowe kodera g≥osu LPC-10 2400 bps
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe kodera g≈Çosu LPC-10 2400 bps
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 LPC-10 2400 bps Voice Coder headers.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe kodera g≥osu LPC-10 2400 bps.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe kodera g≈Çosu LPC-10 2400 bps.
 
 %package static
 Summary:	LPC-10 2400 bps Voice Coder static library
-Summary(pl):	Statyczna biblioteka kodera g≥osu LPC-10 2400 bps
+Summary(pl.UTF-8):   Statyczna biblioteka kodera g≈Çosu LPC-10 2400 bps
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 LPC-10 2400 bps Voice Coder static library.
 
-%description static -l pl
-Statyczna biblioteka kodera g≥osu LPC-10 2400 bps.
+%description static -l pl.UTF-8
+Statyczna biblioteka kodera g≈Çosu LPC-10 2400 bps.
 
 %prep
 %setup -q
