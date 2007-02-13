@@ -1,5 +1,5 @@
 Summary:	LPC-10 2400 bps Voice Coder
-Summary(pl.UTF-8):   Koder głosu LPC-10 2400 bps
+Summary(pl.UTF-8):	Koder głosu LPC-10 2400 bps
 Name:		lpc10
 Version:	1.5
 Release:	2
@@ -20,7 +20,7 @@ Koder głosu LPC-10 2400 bps - biblioteka i narzędzia.
 
 %package devel
 Summary:	LPC-10 2400 bps Voice Coder headers files
-Summary(pl.UTF-8):   Pliki nagłówkowe kodera głosu LPC-10 2400 bps
+Summary(pl.UTF-8):	Pliki nagłówkowe kodera głosu LPC-10 2400 bps
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -32,7 +32,7 @@ Pliki nagłówkowe kodera głosu LPC-10 2400 bps.
 
 %package static
 Summary:	LPC-10 2400 bps Voice Coder static library
-Summary(pl.UTF-8):   Statyczna biblioteka kodera głosu LPC-10 2400 bps
+Summary(pl.UTF-8):	Statyczna biblioteka kodera głosu LPC-10 2400 bps
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
