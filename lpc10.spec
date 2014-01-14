@@ -2,7 +2,7 @@ Summary:	LPC-10 2400 bps Voice Coder
 Summary(pl.UTF-8):	Koder głosu LPC-10 2400 bps
 Name:		lpc10
 Version:	1.5
-Release:	3
+Release:	4
 License:	unknown
 Group:		Applications/Sound
 Source0:	http://www.arl.wustl.edu/~jaf/lpc/%{name}-%{version}.tar.gz
@@ -73,6 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc FAQ README README-1.0 README.lpc10 README.tools
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
+%attr(755,root,root) %ghost %{_libdir}/lib*.so.0
 
 %files devel
 %defattr(644,root,root,755)
