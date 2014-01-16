@@ -59,8 +59,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	LIBDIR=%{_libdir}
 
-mv -f lpc55-C/README README.tools
-mv -f lpc55-C/lpc10/README README.lpc10
+%{__mv} lpc55-C/README README.tools
+%{__mv} lpc55-C/lpc10/README README.lpc10
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -71,16 +71,19 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc FAQ README README-1.0 README.lpc10 README.tools
-%attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
-%attr(755,root,root) %ghost %{_libdir}/lib*.so.0
+%attr(755,root,root) %{_bindir}/nuke
+%attr(755,root,root) %{_bindir}/nuke2
+%attr(755,root,root) %{_bindir}/unnuke
+%attr(755,root,root) %{_bindir}/unnuke2
+%attr(755,root,root) %{_libdir}/liblpc10.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/liblpc10.so.0
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
-%{_includedir}/*.h
+%attr(755,root,root) %{_libdir}/liblpc10.so
+%{_libdir}/liblpc10.la
+%{_includedir}/lpc10.h
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/liblpc10.a
