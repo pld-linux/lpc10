@@ -145,7 +145,7 @@
 +	libtool --mode=link --tag=CC $(CC) -o $(LIB) $^ -rpath $(LIBDIR) -lm
 +
 +%.lo : %.c
-+	libtool --mode=compile $(CC) $(CFLAGS) -o $@ -c $<
++	libtool --mode=compile --tag=CC $(CC) $(CFLAGS) -o $@ -c $<
 +
 +install:
 +	install -d $(DESTDIR)$(LIBDIR)
